@@ -10,11 +10,11 @@ env:
 
 jobs:
  terraform:
-   name: "Terraform Infrastructure Change Management"
+   name: "Terraform Deployment"
    runs-on: ubuntu-latest
    defaults:
      run:
        shell: bash
    steps:
-     - name: Checkout the repository to the runner
-       uses: actions/checkout@v2
+     - name: Checkout
+       uses: actions/checkout@v5
