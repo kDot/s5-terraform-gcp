@@ -1,0 +1,1 @@
+Just deploy a simple resource to gcp with github actions.
