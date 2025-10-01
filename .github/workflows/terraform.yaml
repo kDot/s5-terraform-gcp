@@ -1,0 +1,20 @@
+on:
+ push:
+   branches:
+   - main
+
+env:
+ # verbosity setting for Terraform logs
+ TF_LOG: INFO
+ 
+
+jobs:
+ terraform:
+   name: "Terraform Infrastructure Change Management"
+   runs-on: ubuntu-latest
+   defaults:
+     run:
+       shell: bash
+   steps:
+     - name: Checkout the repository to the runner
+       uses: actions/checkout@v2
